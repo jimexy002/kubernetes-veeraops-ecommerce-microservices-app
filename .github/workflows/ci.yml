@@ -26,11 +26,10 @@ jobs:
       # -------------------------
       # Checkout
       # -------------------------
-      - name: 🧾 Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GIT_PAT }}
-
+          token: ${{ secrets.GITHUB_TOKEN }}
       # -------------------------
       # AWS Credentials
       # -------------------------
